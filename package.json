@@ -1,0 +1,94 @@
+{
+  "name": "developer-workspace-css-template",
+  "version": "2.4.8",
+  "description": "Premium Developer Workspace UI Template with interactive console environment - Proprietary CSS Template",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=index.html",
+    "build": "echo 'Build process not required for static template'",
+    "validate": "html-validate index.html",
+    "lint-css": "stylelint style.css",
+    "minify": "echo 'Minification tools can be added as needed'"
+  },
+  "keywords": [
+    "css-template",
+    "developer-workspace",
+    "terminal-ui",
+    "console-interface",
+    "dark-theme",
+    "animated-particles",
+    "premium-template",
+    "proprietary",
+    "web-development",
+    "ui-template",
+    "frontend",
+    "responsive-design",
+    "modern-css",
+    "interactive-ui"
+  ],
+  "author": {
+    "name": "CSS Template Developer",
+    "email": "licensing@csstemplate.dev",
+    "url": "https://csstemplate.dev"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "copyright": "Copyright (c) 2026 CSS Template Developer Workspace - All Rights Reserved",
+  "homepage": "https://csstemplate.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csstemplate/developer-workspace.git"
+  },
+  "bugs": {
+    "url": "https://issues.csstemplate.dev",
+    "email": "support@csstemplate.dev"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1",
+    "html-validate": "^8.0.0",
+    "stylelint": "^15.10.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "files": [
+    "index.html",
+    "style.css",
+    "README.md",
+    "LICENSE"
+  ],
+  "private": true,
+  "proprietary": true,
+  "restrictions": {
+    "redistribution": false,
+    "modification": "licensed-only",
+    "commercial-use": "licensed-only",
+    "attribution": "required"
+  },
+  "template": {
+    "type": "css-template",
+    "category": "developer-tools",
+    "framework": "vanilla-css",
+    "responsive": true,
+    "browser-support": ["chrome", "firefox", "safari", "edge"],
+    "features": [
+      "animated-particles",
+      "terminal-interface",
+      "dark-theme",
+      "responsive-design",
+      "interactive-console",
+      "status-bar",
+      "glow-effects"
+    ]
+  },
+  "license-info": {
+    "type": "proprietary",
+    "commercial": true,
+    "attribution": true,
+    "redistribution": false,
+    "contact": "licensing@csstemplate.dev"
+  }
+}

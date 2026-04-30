@@ -1,0 +1,348 @@
+/*
+Copyright (c) 2026 CSS Template Developer Workspace
+All rights reserved.
+
+This Developer Workspace CSS Template is proprietary software and the intellectual property of CSS Template Developer.
+Unauthorized reproduction, distribution, modification, or use of this template, in whole or in part, is strictly prohibited.
+
+For licensing inquiries, please contact: licensing@csstemplate.dev
+Website: https://csstemplate.dev
+*/
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace, 'Space Grotesk', sans-serif;
+    background-color: #0a0e17;
+    color: #e0e0e0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Particle Background Animation */
+.particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(25, 93, 209, 0.6);
+    border-radius: 50%;
+    animation: float 15s infinite linear;
+}
+
+.particle:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+    background: rgba(95, 25, 209, 0.5);
+}
+
+.particle:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    top: 60%;
+    left: 25%;
+    animation-delay: 2s;
+    animation-duration: 20s;
+    background: rgba(25, 209, 193, 0.4);
+}
+
+.particle:nth-child(3) {
+    width: 15px;
+    height: 15px;
+    top: 30%;
+    left: 70%;
+    animation-delay: 4s;
+    background: rgba(209, 25, 122, 0.5);
+}
+
+.particle:nth-child(4) {
+    width: 25px;
+    height: 25px;
+    top: 75%;
+    left: 60%;
+    animation-delay: 1s;
+    animation-duration: 25s;
+    background: rgba(209, 159, 25, 0.4);
+}
+
+.particle:nth-child(5) {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    animation-delay: 3s;
+    background: rgba(25, 209, 93, 0.6);
+}
+
+.particle:nth-child(6) {
+    width: 40px;
+    height: 40px;
+    top: 10%;
+    left: 80%;
+    animation-delay: 5s;
+    animation-duration: 30s;
+    background: rgba(209, 25, 25, 0.3);
+}
+
+.particle:nth-child(7) {
+    width: 18px;
+    height: 18px;
+    top: 85%;
+    left: 15%;
+    animation-delay: 2.5s;
+    background: rgba(159, 25, 209, 0.5);
+}
+
+.particle:nth-child(8) {
+    width: 22px;
+    height: 22px;
+    top: 45%;
+    left: 30%;
+    animation-delay: 3.5s;
+    animation-duration: 18s;
+    background: rgba(25, 159, 209, 0.4);
+}
+
+.particle:nth-child(9) {
+    width: 12px;
+    height: 12px;
+    top: 65%;
+    left: 75%;
+    animation-delay: 1.5s;
+    background: rgba(209, 93, 25, 0.6);
+}
+
+.particle:nth-child(10) {
+    width: 35px;
+    height: 35px;
+    top: 25%;
+    left: 45%;
+    animation-delay: 4.5s;
+    animation-duration: 22s;
+    background: rgba(93, 25, 209, 0.3);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-100px) translateX(50px) rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0) translateX(100px) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Content Styles */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.title-glow {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #4a9ff5;
+    text-shadow: 0 0 10px rgba(74, 159, 245, 0.7), 
+                 0 0 20px rgba(74, 159, 245, 0.5);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    animation: pulse 3s infinite alternate;
+}
+
+.subtitle-pulse {
+    font-size: 1.5rem;
+    color: #a4b1cd;
+    font-weight: 400;
+    letter-spacing: 2px;
+    animation: pulse 4s infinite alternate;
+}
+
+/* Console Area */
+.console-area {
+    background: rgba(10, 14, 23, 0.8);
+    border: 1px solid #1e2a4a;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+                inset 0 0 10px rgba(74, 159, 245, 0.2);
+    overflow: hidden;
+    margin-bottom: 30px;
+    animation: slideUp 1s ease-out;
+}
+
+.console-header {
+    background: linear-gradient(to right, #0f1a31, #1a2a4a);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2a3a5a;
+}
+
+.console-dots {
+    display: flex;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background: #ff5f56;
+    box-shadow: 0 0 5px #ff5f56;
+}
+
+.dot.yellow {
+    background: #ffbd2e;
+    box-shadow: 0 0 5px #ffbd2e;
+}
+
+.dot.green {
+    background: #27c93f;
+    box-shadow: 0 0 5px #27c93f;
+}
+
+.console-title {
+    color: #a4b1cd;
+    font-size: 0.9rem;
+}
+
+.console-body {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    font-family: 'Fira Code', monospace;
+    line-height: 1.6;
+    background: rgba(5, 10, 20, 0.7);
+}
+
+.console-body p {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.console-body p::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #4a9ff5;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(15, 25, 45, 0.8);
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: 1px solid #2a3a5a;
+    animation: fadeIn 2s ease-out;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-label {
+    color: #7a8bb8;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.status-value {
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.status-value.active {
+    color: #27c93f;
+    text-shadow: 0 0 8px rgba(39, 201, 63, 0.5);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+        text-shadow: 0 0 10px rgba(74, 159, 245, 0.5);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(74, 159, 245, 0.8);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(20, 30, 50, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3a4a6a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a5a7a;
+}

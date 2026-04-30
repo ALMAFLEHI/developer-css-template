@@ -1,0 +1,105 @@
+<!--
+Copyright (c) 2026 CSS Template Developer Workspace
+All rights reserved.
+
+This Developer Workspace CSS Template is proprietary software and the intellectual property of CSS Template Developer.
+Unauthorized reproduction, distribution, modification, or use of this template, in whole or in part, is strictly prohibited.
+
+For licensing inquiries, please contact: licensing@csstemplate.dev
+Website: https://csstemplate.dev
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CSS Template Developer">
+    <meta name="copyright" content="Copyright (c) 2026 CSS Template Developer Workspace">
+    <meta name="license" content="All Rights Reserved">
+    <meta name="description" content="Premium Developer Workspace UI Template with interactive console environment">
+    <title>Developer Workspace - Premium CSS Template</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <div class="content-wrapper">
+        <header class="main-header">
+            <h1 class="title-glow">Developer Workspace</h1>
+            <p class="subtitle-pulse">Interactive Console Environment</p>
+        </header>
+        
+        <div class="console-area">
+            <div class="console-header">
+                <div class="console-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="console-title">terminal.js</span>
+            </div>
+            <div class="console-body" id="console-output">
+                <p>> System initialized</p>
+                <p>> Ready for developer input</p>
+                <p>> Type in browser console to interact</p>
+            </div>
+        </div>
+        
+        <div class="status-bar">
+            <div class="status-item">
+                <span class="status-label">CONNECTION:</span>
+                <span class="status-value active">SECURE</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">MODE:</span>
+                <span class="status-value">DEVELOPMENT</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">VERSION:</span>
+                <span class="status-value">2.4.8</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const consoleOutput = document.getElementById('console-output');
+            
+            // Simulate typing effect
+            const messages = [
+                "> System checks completed",
+                "> Memory allocation optimized",
+                "> All systems operational",
+                "> Awaiting developer commands..."
+            ];
+            
+            let index = 0;
+            const typeInterval = setInterval(() => {
+                if (index < messages.length) {
+                    const newLine = document.createElement('p');
+                    newLine.textContent = messages[index];
+                    consoleOutput.appendChild(newLine);
+                    consoleOutput.scrollTop = consoleOutput.scrollHeight;
+                    index++;
+                } else {
+                    clearInterval(typeInterval);
+                }
+            }, 1500);
+            
+            console.log('Workspace initialized. Ready for development!');
+        });
+    </script>
+</body>
+</html>
