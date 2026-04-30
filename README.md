@@ -4,6 +4,10 @@
 ![Version](https://img.shields.io/badge/Version-2.4.8-blue)
 ![Status](https://img.shields.io/badge/Status-Premium%20Template-green)
 
+## **Preview**
+
+![Developer Workspace CSS Template](assets/developer-workspace-screenshot.png)
+
 A sophisticated, interactive developer workspace UI template designed for modern web applications. This template features a terminal-inspired interface with animated particle backgrounds, real-time console simulation, and a sleek dark theme perfect for developer tools, coding platforms, and tech-focused applications.
 
 ## **Features**
