@@ -6,7 +6,7 @@
 
 ## **Preview**
 
-![Developer Workspace CSS Template](assets/developer-workspace-screenshot.png)
+![Developer Workspace CSS Template](./assets/developer-workspace-screenshot.png)
 
 A sophisticated, interactive developer workspace UI template designed for modern web applications. This template features a terminal-inspired interface with animated particle backgrounds, real-time console simulation, and a sleek dark theme perfect for developer tools, coding platforms, and tech-focused applications.
 
